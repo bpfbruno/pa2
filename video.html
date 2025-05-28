@@ -16,41 +16,51 @@
 </head>
 
 <body>
-    <div id="contenedor">
-        <audio id="musica" src="musica/Radiohead - Creep.mp3" loop></audio>
-        <div class="cabecera">
-            <h1><em><a href="index.html" id="titulo">fifty coffees</a></em></h1>
-            <nav>
-                <ul id="menu">
-                    <li><a href="index.html"><i class="fa-regular fa-heart"></i> INICIO</a></li>
-                    <li><a href="blog.html"><i class="fa-solid fa-pencil"></i> BLOG</a></li>
-                    <li ><a href="galeria.html"><i class="fa-solid fa-image"></i> GALERIA</a></li>
-                    <li style="border-bottom: 3px solid orange; padding-bottom: 10px;"><a href="video.html"><i class="fa-solid fa-video"></i> VIDEOS</a></li>
-                </ul>
-            </nav>
-    </div>
-            <h3>El amor por el café</h3>
-            <br><br><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius ad sed, dignissimos id fugiat rerum
-                sapiente accusamus unde error, facilis voluptas deserunt, corrupti reprehenderit non numquam quasi
-                dolorum magnam!</p>
-    <section>
-        <article class="video-bloque">
-            <div class="video-responsive">
-                <iframe src="https://www.youtube.com/embed/aTC_RNYtEb0?si=aKlPXpyc4pZOjfu_" title="YouTube video player"frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab fugit expedita, nostrum, quisquam quam voluptates recusandae, saepe magni similique veritatis alias! Officiis tempore nam aliquid! Alias recusandae nobis tenetur officia!</p>
-        </article>
 
-        <article class="video-bloque">
-            <div class="video-responsive">
-                <iframe src="https://player.vimeo.com/video/314004581?badge=0&autopause=0"
-            frameborder="0"allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"title="Coffee Shop Commercial | ZAPPA Coffee&Sweets"></iframe>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quasi optio nulla vitae corrupti excepturi quaerat ipsam ad, ducimus eaque voluptate voluptas impedit odio inventore aliquam corporis officia praesentium? Dolorem!
-            </p>
-        </article>
-    </section>
+    <audio id="musica" src="musica/Radiohead - Creep.mp3" loop></audio>
+    <div class="cabecera">
+        <h1><em><a href="index.html" id="titulo">fifty coffees</a></em></h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html"><i class="fa-regular fa-heart"></i> INICIO</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-pencil"></i> BLOG</a></li>
+                <li><a href="galeria.html"><i class="fa-solid fa-image"></i> GALERIA</a></li>
+                <li style="border-bottom: 3px solid orange; padding-bottom: 10px;"><a href="video.html"><i
+                            class="fa-solid fa-video"></i> VIDEOS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contenedor">
+        <h3>El amor por el café</h3>
+        <br><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius ad sed, dignissimos id fugiat rerum
+            sapiente accusamus unde error, facilis voluptas deserunt, corrupti reprehenderit non numquam quasi
+            dolorum magnam!</p>
+        <section>
+            <article class="video-bloque">
+                <div class="video-responsive">
+                    <iframe src="https://www.youtube.com/embed/aTC_RNYtEb0?si=aKlPXpyc4pZOjfu_"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab fugit expedita, nostrum, quisquam quam
+                    voluptates recusandae, saepe magni similique veritatis alias! Officiis tempore nam aliquid! Alias
+                    recusandae nobis tenetur officia!</p>
+            </article>
+
+            <article class="video-bloque">
+                <div class="video-responsive">
+                    <iframe src="https://player.vimeo.com/video/314004581?badge=0&autopause=0" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                        title="Coffee Shop Commercial | ZAPPA Coffee&Sweets"></iframe>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quasi optio nulla vitae corrupti
+                    excepturi quaerat ipsam ad, ducimus eaque voluptate voluptas impedit odio inventore aliquam corporis
+                    officia praesentium? Dolorem!
+                </p>
+            </article>
+        </section>
         <nav>
             <ul id="redes">
                 <li><a href="https://x.com/fifty_coffees"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -62,13 +72,13 @@
     </div>
     </div>
     <script>
-    window.addEventListener('DOMContentLoaded', () => {
-        const titulo = document.getElementById('titulo');
+        window.addEventListener('DOMContentLoaded', () => {
+            const titulo = document.getElementById('titulo');
 
-        titulo.addEventListener('click', () => {
-            sessionStorage.setItem('reproducirMusica', 'true');
+            titulo.addEventListener('click', () => {
+                sessionStorage.setItem('reproducirMusica', 'true');
+            });
         });
-    });
     </script>
 
 </body>

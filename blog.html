@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,27 @@
     <link rel="shortcut icon" href="imagenes09/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <audio id="musica" src="musica/Radiohead - Creep.mp3" autoplay loop></audio>
+
+    <div class="cabecera">
+        <h1><em><a href="index.html">fifty coffees</a></em></h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html"><i class="fa-regular fa-heart"></i> INICIO</a></li>
+                <li style="border-bottom: 3px solid orange; padding-bottom: 10px;"><a href="blog.html"><i
+                            class="fa-solid fa-pencil"></i> BLOG</a></li>
+                <li><a href="galeria.html"><i class="fa-solid fa-image"></i> GALERIA</a></li>
+                <li><a href="video.html"><i class="fa-solid fa-video"></i> VIDEOS</a></li>
+            </ul>
+        </nav>
+    </div>
     <div id="contenedor">
-        
-        <audio id="musica" src="musica/Radiohead - Creep.mp3" autoplay loop></audio>
-        
-        <div class="cabecera">
-            <h1><em><a href="index.html">fifty coffees</a></em></h1>
-            <nav>
-                <ul id="menu">
-                    <li><a href="index.html"><i class="fa-regular fa-heart"></i> INICIO</a></li>
-                    <li style="border-bottom: 3px solid orange; padding-bottom: 10px;"><a href="blog.html"><i class="fa-solid fa-pencil"></i> BLOG</a></li>
-                    <li><a href="galeria.html"><i class="fa-solid fa-image"></i> GALERIA</a></li>
-                    <li><a href="video.html"><i class="fa-solid fa-video"></i> VIDEOS</a></li>
-                </ul>
-            </nav>
-        </div>
         <div class="corazon">
             <img class="chica" src="imagenes09/blog_top.jpeg" alt="">
         </div>
@@ -36,11 +40,18 @@
                 <img src="imagenes09/Sin título-1 (1)300.jpg" alt="">
                 <p>Bruno Pina Flores</p>
             </div>
-            <p class="parrafo uno">10/02/2023 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis at quas velit repellat nobis cupiditate, commodi explicabo necessitatibus praesentium ratione mollitia iure reprehenderit magni illum? Rerum inventore amet minima?
+            <p class="parrafo uno">10/02/2023 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis
+                at quas velit repellat nobis cupiditate, commodi explicabo necessitatibus praesentium ratione mollitia
+                iure reprehenderit magni illum? Rerum inventore amet minima?
             </p><br><br>
             <img class="cafe" src="imagenes09/cafe.jpg" alt="">
-            <p class="parrafo dos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas omnis itaque dicta voluptatem voluptatibus asperiores laboriosam aliquid perferendis delectus? Vitae, qui quas? Ipsum iure nam earum nisi, exercitationem tempore amet dolore alias repellat optio ipsa dicta quisquam pariatur unde quam voluptas mollitia? Pariatur rem earum mollitia adipisci a hic neque?</p><br><br>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem ex voluptate labore saepe accusamus repellendus, beatae id mollitia nobis quibusdam, eveniet eligendi temporibus in. Atque officia labore beatae perferendis dolor.</p>
+            <p class="parrafo dos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas omnis itaque dicta
+                voluptatem voluptatibus asperiores laboriosam aliquid perferendis delectus? Vitae, qui quas? Ipsum iure
+                nam earum nisi, exercitationem tempore amet dolore alias repellat optio ipsa dicta quisquam pariatur
+                unde quam voluptas mollitia? Pariatur rem earum mollitia adipisci a hic neque?</p><br><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem ex voluptate labore saepe
+                accusamus repellendus, beatae id mollitia nobis quibusdam, eveniet eligendi temporibus in. Atque officia
+                labore beatae perferendis dolor.</p>
         </div>
         <div id="footer">
             <br>
@@ -49,9 +60,11 @@
             </div>
             <nav>
                 <ul id="redes">
-                    <li><a href="https://x.com/fifty_coffees"><i  class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/fiftycoffeessa"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/fifty_coffees/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/fifty_coffees"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/fiftycoffeessa"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/fifty_coffees/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
                     <li><a href="https://brooklynplaces.tumblr.com/"><i class="fa-brands fa-tiktok"></i></a></li>
                 </ul>
             </nav>
@@ -59,9 +72,10 @@
     </div>
     <script>
         window.addEventListener('DOMContentLoaded', () => {
-        const audio = document.getElementById('musica');
-        audio.volume = 0.08;
+            const audio = document.getElementById('musica');
+            audio.volume = 0.08;
         });
     </script>
 </body>
+
 </html>
