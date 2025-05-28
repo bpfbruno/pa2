@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERIA | fifty coffees</title>
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="shortcut icon" href="imagenes09/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="contenedor">
+
+        <audio id="musica" src="musica/Radiohead - Creep.mp3" autoplay loop></audio>
+
+        <div class="cabecera">
+            <h1><em><a href="index.html">fifty coffees</a></em></h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html"><i class="fa-regular fa-heart"></i>  INICIO</a></li>
+                    <li><a href="blog.html"><i class="fa-solid fa-pencil"></i>  BLOG</a></li>
+                    <li style="border-bottom: 3px solid orange; padding-bottom: 10px;"><a href="galeria.html"><i
+                                class="fa-solid fa-image"></i>  GALERIA</a></li>
+                    <li><a href="video.html"><i class="fa-solid fa-video"></i>  VIDEOS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="padre">
+            <div class="hijo uno"><img src="imagenes09/imagen1.jpg" alt=""> <br><br><em>Imagen 1</em></div><br><br>
+            <div class="hijo dos"><img src="imagenes09/imagen2.jpg" alt=""> <br><br><em>Imagen 2</em></div><br><br>
+            <div class="hijo tres"><img src="imagenes09/imagen3.jpg" alt=""> <br><br><em>Imagen 3</em></div><br><br>
+            <div class="hijo cuatro"><img src="imagenes09/imagen4.webp" alt=""> <br><br><em>Imagen 4</em></div><br><br>
+            <div class="hijo cinco"> <img src="imagenes09/imagen5.jpg" alt=""> <br><br><em>Imagen 5</em></div>
+            <div class="hijo seis"> <img src="imagenes09/imagen6.jpg" alt=""> <br><br><em>Imagen 6</em></div><br><br>
+        </div>
+        <nav>
+            <ul id="redes">
+                <li><a href="https://x.com/fifty_coffees"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/fiftycoffeessa"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/fifty_coffees/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://brooklynplaces.tumblr.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('musica');
+            audio.volume = 0.08;
+        });
+    </script>
+</body>
+
+</html>

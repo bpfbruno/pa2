@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+#contenedor{
+    max-width: 1000px;
+    width: 90%;
+    padding: 10px;
+    position: relative;
+    margin: 40px auto;
+}
+h1{
+    font-size: 5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.cabecera{
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+#menu{
+    padding-bottom: 20px;
+}
+
+#menu, #redes{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 1em;
+    z-index: 100;
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+h1:hover{
+    opacity: 60%;
+}
+#redes li a{
+    text-decoration: none;
+    color: blue;
+    margin: 0 15px;
+    border-radius: 5px;
+}
+#menu li a{
+    text-decoration: none;
+    color: blue;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+#menu li a:hover{
+    opacity: 60%;
+}
+#redes i:hover{
+    opacity: 60%;
+}
+image{
+    height: 100px;
+    width: 200px;
+}
+#texto, #footer{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+.corazon{
+    width: 90%;
+    margin: 25px auto;
+}
+.chica{
+    width: 100%;
+    position: relative;
+    
+}
+h2{
+    text-align: center;
+}
+#autor{
+    width: 60px;
+    text-align: center; 
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+#autor img{
+    width: 100%;
+    border-radius: 50%;
+}
+#autor p{
+    font-size: 0.7em;
+
+}
+.parrafo{
+    font-size: 1em;
+    text-align: justify;
+}
+.uno{
+    margin-top: 80px;
+}
+.cafe{
+    width: 100px;
+    float: left;
+    display: block;
+    margin: 10px;
+}
+#redes i{
+    background-color: black; 
+    border-radius: 50%; 
+    height: 40px; 
+    width: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    padding-top: 2px;
+    margin: 5px;
+}
+p{
+    color: rgb(143, 82, 32);
+}
+h3{
+    color: #8b825a;
+}

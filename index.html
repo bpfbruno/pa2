@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>fifty coffees</title>
+    <link rel="shortcut icon" href="imagenes09/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="fondo">
+        <div class="overlay"></div>
+    </div>
+        
+    <div id="contenedor" >
+        <audio id="musica" src="musica/Radiohead - Creep.mp3" loop></audio>
+        <div class="inicio">
+            <h1><em> fifty coffees</em></h1>
+            <p>
+                "Nuesta misión descubrir tu próxima gran aventura, empieza <br> la mañana con <em style="opacity: 80%;">fifty coffes</em> para resolverlo".
+            </p>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html" id="inicioBtn">INICIO</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="video.html">VIDEOS</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul id="redes">
+                    <li><a href="https://x.com/fifty_coffees"><i  class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/fiftycoffeessa"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/fifty_coffees/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://brooklynplaces.tumblr.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    
+    
+    </div>
+    <script>
+window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('musica');
+    audio.volume = 0.08;
+
+    // Reproducir si la sesión indica que debe sonar
+    const reproducir = sessionStorage.getItem('reproducirMusica');
+    if (reproducir === 'true') {
+        audio.play().catch(err => {
+            console.warn("El navegador bloqueó la reproducción automática:", err);
+        });
+        sessionStorage.removeItem('reproducirMusica');
+    }
+
+    // Si tienes un botón para iniciar música manualmente
+    const inicioBtn = document.getElementById('inicioBtn');
+    if (inicioBtn) {
+        inicioBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            audio.volume = 0.1;
+            audio.play().then(() => {
+                console.log('Música iniciada');
+            }).catch(error => {
+                console.log('Error al reproducir:', error);
+            });
+        });
+    }
+});
+</script>
+</body>
+</html>
