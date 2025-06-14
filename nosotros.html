@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSOTROS | fifty coffees</title>
+    <link rel="stylesheet" href="nosotros.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="shortcut icon" href="imagenes09/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <audio id="musica" src="musica/Radiohead - Creep.mp3" loop></audio>
+
+    <div class="cabecera">
+        <h1><em><a href="index.html" id="titulo">fifty coffees</a></em></h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html"><i class="fa-regular fa-heart"></i> INICIO</a></li>
+                <li style="border-bottom: 3px solid orange; padding-bottom: 10px;"><a href="nosotros.html"><i class="fa-solid fa-users"></i> NOSOTROS</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-pencil"></i> BLOG</a></li>
+                <li><a href="galeria.html"><i class="fa-solid fa-image"></i> GALERIA</a></li>
+                <li><a href="video.html"><i class="fa-solid fa-video"></i> VIDEOS</a></li>
+                <li><a href="contactos.html"><i class="fa-regular fa-address-card"></i> CONTACTOS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contenedor">
+        <div class="contenido">
+            <div class="grid">
+                <div class="titulo">
+                    <h2>Nosotros</h2>
+                </div>
+                <div class="texto">
+                    <br>
+                    <h3>¿Quienes somos?</h3>                    
+                    <hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima obcaecati autem voluptatibus iure! Ullam amet excepturi repellendus tempora veritatis blanditiis nemo molestiae cupiditate deserunt enim dicta nihil perspiciatis explicabo reiciendis dolor, distinctio, aliquid earum rerum ad itaque aspernatur accusamus fugiat. Sed, animi! Ab aperiam cupiditate voluptates quam praesentium, in iure sed harum reiciendis magni mollitia amet soluta distinctio quos unde quia quidem? Nulla ab tenetur sed dolores quisquam vitae temporibus..</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum commodi doloribus dignissimos pariatur labore laboriosam architecto illo consequatur quia tempora, qui quis quos obcaecati expedita nemo atque veritatis iure sit vitae aliquid. Optio vel amet consequuntur aliquid voluptatum commodi quasi natus dolor, aut, neque unde? Voluptatum dolore delectus adipisci non, provident quae unde inventore eius ratione, pariatur a? Consectetur provident eaque porro iure. Quibusdam quidem, esse incidunt architecto modi repudiandae.</p>
+                    <hr>
+                </div>
+                <div class="imagen-uno">
+                    <img id="uno" src="imagenes09/negociantes.jpg" alt="">
+                </div>
+                <div class="imagen-dos">
+                    <img id="dos" src="imagenes09/negociantes2.webp" alt="">
+                </div>
+                <div class="anuncio">
+                    <img id="publi" src="imagenes09/anuncio.jpg" alt="">
+                </div>
+                <div class="pie">
+                    <h4>Copyrigth 2024 - Todos los Derechos reservados </h4>
+                </div>
+            </div>
+
+        </div>
+        <nav>
+            <ul id="redes">
+                <li><a href="https://x.com/fifty_coffees"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/fiftycoffeessa"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/fifty_coffees/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://brooklynplaces.tumblr.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const titulo = document.getElementById('titulo');
+
+            titulo.addEventListener('click', () => {
+                sessionStorage.setItem('reproducirMusica', 'true');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

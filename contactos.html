@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTOS | fifty coffees</title>
+    <link rel="stylesheet" href="contactos.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="shortcut icon" href="imagenes09/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <audio id="musica" src="musica/Radiohead - Creep.mp3" loop></audio>
+
+    <div class="cabecera">
+        <h1><em><a href="index.html" id="titulo">fifty coffees</a></em></h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html"><i class="fa-regular fa-heart"></i> INICIO</a></li>
+                <li><a href="nosotros.html"><i class="fa-solid fa-users"></i> NOSOTROS</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-pencil"></i> BLOG</a></li>
+                <li><a href="galeria.html"><i class="fa-solid fa-image"></i> GALERIA</a></li>
+                <li ><a href="video.html"><i class="fa-solid fa-video"></i> VIDEOS</a></li>
+                <li style="border-bottom: 3px solid orange; padding-bottom: 10px;"><a href="contactos.html"><i class="fa-regular fa-address-card"></i> CONTACTOS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contenedor">
+        <div class="contenido">
+            <div class="grid">
+                <div class="tabla">
+                    <table>
+                        <h2>Información de Contacto</h2>
+                        <tr>
+                            <td><b>Dirección:</b></td>
+                            <td>Jr. Carabaya 552 - Lima Perú <br>Jr. Camaná 758 - Lima Perú</td>
+                        </tr>
+                        <tr>
+                            <td><b>Telefonos:</b></td>
+                            <td>997 557 470 | 980 978 484 | (01) <br>5335242</td>
+                        </tr>
+                        <tr>
+                            <td><b>Email:</b></td>
+                            <td>info@fiftycoffees.com</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <h2>Horario de Atención Presencial</h2>
+                        <tr>
+                            <td><b>Area de Ventas:</b> <br>De Lunes a Viernes de 8am a 6pm</td>
+                        </tr>
+                    </table>
+                    <img src="imagenes09/imagencontactos.jpg" alt="">
+                </div>
+                <div class="formulario">
+                    <h2>Dejanos tu comentario</h2>
+                    <form action="">
+                        <label for="">Nombre y Apellido</label>
+                        <br><input type="text">
+                        <br><label for="">Celular*</label>
+                        <br><input type="number" placeholder="999 999 999" required>
+                        <br><label for="">Correo electronico*</label>
+                        <br><input type="email" name="" id="" placeholder="nombre@dominio.com" required>
+                        <br><label for="">RUC - Empresa (Opcional)</label>
+                        <br><input type="number" name="" id="">
+                        <br><label for="">Mensaje</label>
+                        <br><textarea rows="4" placeholder="Detalla tu experiencia a continuación como punto de inicio"></textarea>
+                        <br>
+                    </form>
+                    <button>ENVIAR</button>
+                </div>
+                <div class="maps">
+                    <div id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.9139819746974!2d-77.03459100513625!3d-12.049439238423332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b634d43951%3A0xf40af81fb4d29242!2sJir%C3%B3n%20Carabaya%20552%2C%20Lima%2015001!5e0!3m2!1ses!2spe!4v1749866534165!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <nav>
+            <ul id="redes">
+                <li><a href="https://x.com/fifty_coffees"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/fiftycoffeessa"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/fifty_coffees/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://brooklynplaces.tumblr.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const titulo = document.getElementById('titulo');
+
+            titulo.addEventListener('click', () => {
+                sessionStorage.setItem('reproducirMusica', 'true');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

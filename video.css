@@ -10,7 +10,7 @@
     width: 90%;
     padding: 10px;
     position: relative;
-    margin: 40px auto;
+    margin: 0px auto 40px auto;
 }
 .cabecera{
     height: auto;
@@ -36,7 +36,7 @@ h1:hover{
     opacity: 60%;
 }
 #menu{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 #menu, #redes{
     list-style: none;
@@ -56,7 +56,7 @@ h1:hover{
 }
 #menu li a{
     text-decoration: none;
-    color: blue;
+    color: #FBA235;
     margin: 0 20px;
     border-radius: 5px;
 }
